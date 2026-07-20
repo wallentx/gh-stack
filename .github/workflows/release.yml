@@ -21,5 +21,7 @@ jobs:
         with:
           generate_attestations: true
           go_version_file: go.mod
+          release_android: true
+          android_sdk_version: 24
           go_build_options: >-
             -ldflags=-X=github.com/github/gh-stack/cmd.Version=${{ steps.version.outputs.version }}
